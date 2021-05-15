@@ -1,3 +1,35 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menuId="menu" contentId="main">
+    <ion-content>
+      <div class="menu"></div>
+      <div class="header-content">
+        <ion-label>
+          <h2 class="menuT">
+            Menu
+          </h2>
+        </ion-label>
+      </div>
+
+      <ion-list class="item-list" lines="none">
+        <ion-item>
+          Products
+        </ion-item>
+        <ion-item>
+          Start page
+        </ion-item>
+        <ion-item>
+          Search for Products
+        </ion-item>
+        <ion-item>
+          Customer Experience
+        </ion-item>
+        <ion-item>
+          About us
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    <p class="some">Something about the company
+      @we_are_the_best</p>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
