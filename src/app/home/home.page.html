@@ -1,0 +1,51 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+          <ion-menu-button menu="menu" color="primary" ></ion-menu-button>
+    </ion-buttons>
+
+  <ion-buttons slot="end">
+    <ion-button id="btn1" fill="outline" color="primary" size="large">
+     LOGIN
+    </ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle id="header">Welcome to</ion-card-subtitle>
+      <ion-card-title id="title">The Animal Product Finder</ion-card-title>
+    </ion-card-header>
+    <ion-card-content id="text">
+      The Animals were an English rhythm and
+      blues and rock band, formed in Newcastle
+      upon Tyne in the early 1960s. The band moved to
+      London upon finding fame in 1964. The Animals
+      were known for their gritty, bluesy sound
+      and deep-voiced frontman Eric Burdon,
+      as exemplified by their signature song and
+      transatlantic number-one hit single,
+      "The House of the Rising Sun", as well as
+      by hits such as "We Gotta Get Out of This Place",
+      "It's My Life", "Don't Bring Me Down",
+      of the British Invasion of the US.
+    </ion-card-content>
+  </ion-card>
+
+  <img id="img" src="../img/group-of-zoo-animals.jpg" alt="The image is brocken">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title id="title2">What Product are you searching for</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <input class="input" type="text" name="product" placeholder="Enter what you want to find">
+        <ion-button id="btn2">SEARCH</ion-button>
+      </ion-card-content>
+  </ion-card>
+
+  <img id="img" src="../img/meat.jpg" alt="The image is brocken">
+
+</ion-content>
