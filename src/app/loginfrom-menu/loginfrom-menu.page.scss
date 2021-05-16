@@ -1,0 +1,41 @@
+ion-content {
+  --ion-background-color: #3B91E1;
+}
+
+ion-toolbar {
+  --background: #3B91E1;
+}
+
+#header {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 250px;
+}
+
+
+  ion-button {
+    --background: white;
+  }
+
+  ion-input {
+    --background: white;
+    border-radius: 30px;
+    --padding-start: 30px;
+    font-size: 20px;
+  }
+
+  .inp {
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 450px;
+
+  }
+
+  .inp2 {
+    margin-left: 10%;
+    width: 450px;
+    margin-top: 5%;
+  }

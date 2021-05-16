@@ -1,5 +1,6 @@
 <ion-app>
-  <ion-menu side="start" menuId="menu" contentId="main">
+  <ion-menu side="start" menuId="menu" contentId="main"
+  type="reveal">
     <ion-content>
       <div class="menu"></div>
       <div class="header-content">
@@ -11,7 +12,7 @@
       </div>
 
       <ion-list class="item-list" lines="none">
-        <ion-item>
+        <ion-item >
           Products
         </ion-item>
         <ion-item>
@@ -25,6 +26,11 @@
         </ion-item>
         <ion-item>
           About us
+        </ion-item>
+        <ion-item>
+          <ion-button id="signin" size="large" shape="round" routerLink="loginfrom-menu">
+            Sign in
+          </ion-button>
         </ion-item>
       </ion-list>
     </ion-content>

@@ -10,6 +10,22 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'loginfrom-menu',
+    loadChildren: () => import('./loginfrom-menu/loginfrom-menu.module').then( m => m.LoginfromMenuPageModule)
+  },
+  {
+    path: 'signin-costomer',
+    loadChildren: () => import('./signin-costomer/signin-costomer.module').then( m => m.SigninCostomerPageModule)
+  },
+  {
+    path: 'signin-provider',
+    loadChildren: () => import('./signin-provider/signin-provider.module').then( m => m.SigninProviderPageModule)
   }
 ];
 
