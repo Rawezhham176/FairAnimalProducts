@@ -6,36 +6,60 @@ ion-toolbar {
   --background: #3B91E1;
 }
 
-#header {
-  color: white;
-  text-align: center;
-  font-size: 60px;
-  font-weight: bold;
-  margin-top: 250px;
+ion-card {
+  margin: 50px auto;
+  height: 420px;
+  margin-right: 7%;
+  margin-top: 15%;
+  margin-left: 7%;
+  border-radius: 35px;
+}
+
+ion-back-button {
+  margin-right: 50%;
 }
 
 
-  ion-button {
-    --background: white;
+#header {
+  color: #3B91E1;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 70px;
+}
+
+
+
+  #btn1 {
+    margin-left: 38%;
+    margin-top: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    --background: #3B91E1;
+    color: white;
   }
 
   ion-input {
     --background: white;
-    border-radius: 30px;
-    --padding-start: 30px;
-    font-size: 20px;
+    border-radius: 500px;
+    --padding-start: 15px;
+    font-size: 15px;
   }
 
-  .inp {
-    align-items: center;
-    margin-top: 5%;
-    margin-left: 10%;
-    width: 450px;
 
+  .inp1 {
+    background-color: white;
+    border-radius: 400px;
+    margin-top: 10%;
+    margin-left: 7%;
+    width: 310px;
+    box-shadow: 0px 1px 10px rgba(196, 201, 216, 0.5);
   }
 
   .inp2 {
-    margin-left: 10%;
-    width: 450px;
-    margin-top: 5%;
+    width: 310px;
+    margin-left: 7%;
+    margin-top: 8%;
+    border-radius: 400px;
+    box-shadow: 0px 1px 10px rgba(196, 201, 216, 0.5);
   }

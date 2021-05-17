@@ -1,9 +1,39 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>signin-provider</ion-title>
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menu" color="light" ></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-back-button color="light" text="" icon="arrow-back-circle-outline"></ion-back-button>>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card color="light">
+    <h1 id="header">I am a Provider</h1>
+    <div class="inp1">
+      <ion-input placeholder="Name" inputmode="text"></ion-input>
+    </div>
+    <div class="inp1">
+      <ion-input placeholder="Adresse" inputmode="text"></ion-input>
+    </div>
+    <div class="inp1">
+      <ion-input placeholder="zip code" type="number"></ion-input>
+    </div>
+    <div class="inp1">
+      <ion-input placeholder="City" inputmode="text"></ion-input>
+    </div>
+    <div class="inp1">
+      <ion-input placeholder="Email" inputmode="text"></ion-input>
+    </div>
+    <div class="inp1">
+      <ion-input placeholder="Email again" inputmode="text"></ion-input>
+    </div>
+    <div class="inp1">
+      <ion-input placeholder="Telefon number" type="number"></ion-input>
+    </div>
+    <ion-button id="btn1" shape="round">Sign up</ion-button>
+  </ion-card>
 </ion-content>

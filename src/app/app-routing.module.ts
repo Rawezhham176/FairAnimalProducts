@@ -26,6 +26,22 @@ const routes: Routes = [
   {
     path: 'signin-provider',
     loadChildren: () => import('./signin-provider/signin-provider.module').then( m => m.SigninProviderPageModule)
+  },
+  {
+    path: 'products',
+    loadChildren: () => import('./products/products.module').then( m => m.ProductsPageModule)
+  },
+  {
+    path: 'aboutus',
+    loadChildren: () => import('./aboutus/aboutus.module').then( m => m.AboutusPageModule)
+  },
+  {
+    path: 'experience',
+    loadChildren: () => import('./experience/experience.module').then( m => m.ExperiencePageModule)
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
   }
 ];
 

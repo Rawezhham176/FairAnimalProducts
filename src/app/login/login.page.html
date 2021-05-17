@@ -1,18 +1,18 @@
 <ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar class="ion-no-border">
     <ion-buttons slot="start">
       <ion-menu-button menu="menu" color="light" ></ion-menu-button>
     </ion-buttons>
-
     <ion-buttons slot="end">
-      <ion-back-button color="light">
-      </ion-back-button>
+      <ion-back-button color="light" text="" icon="arrow-back-circle-outline" size="large"></ion-back-button>>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<h1 id="header">SIGN UP</h1>
-<ion-button id="btn1" size="large" shape="round">I am a Customer</ion-button>
-<ion-button id="btn2" size="large" shape="round">I am a Provider</ion-button>
+  <ion-card color="light">
+    <h1 id="header">SIGN UP</h1>
+    <ion-button id="btn1" size="large" shape="round" routerLink="/signin-costomer">I am a Customer</ion-button>
+    <ion-button id="btn2" size="large" shape="round" routerLink="/signin-provider">I am a Provider</ion-button>
+  </ion-card>
 </ion-content>
