@@ -1,9 +1,38 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>products</ion-title>
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menu" color="primary" ></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-back-button color="primary" text="" icon="arrow-back-circle-outline"></ion-back-button>>
+    </ion-buttons>
+
+    <ion-title id="title" color="primary">Products</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-card *ngFor="let product of Products" color="primary">
+        <h2>{{product.product_name}}</h2>
+        <h3>{{product.product_producer}}</h3>
+        <h3>{{product.product_price}}</h3>
+        <h3>{{product.product_description}}</h3>
 
+      <div class="item-note" item-end>
+        <button ion-button clear [routerLink]="['/edit-product/', product._id]">
+          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear (click)="deleteProduct(product, i)">
+          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+    </ion-card>
+
+  <!-- fab placed to the bottom start -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" routerLink="/add-product">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
