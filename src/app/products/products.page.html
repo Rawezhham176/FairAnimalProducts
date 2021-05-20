@@ -13,11 +13,12 @@
 </ion-header>
 
 <ion-content>
-    <ion-card *ngFor="let product of Products" color="primary">
-        <h2>{{product.product_name}}</h2>
-        <h3>{{product.product_producer}}</h3>
-        <h3>{{product.product_price}}</h3>
-        <h3>{{product.product_description}}</h3>
+    <ion-card *ngFor="let product of Products">
+        <img src="{{product.product_image}}" alt="Image">
+        <h2 id="name">{{product.product_name}}</h2>
+        <h3 id="producer">{{product.product_producer}}</h3>
+        <h3 id="price">Price: {{product.product_price}}</h3>
+        <p id="description">{{product.product_description}}</p>
 
       <div class="item-note" item-end>
         <button ion-button clear [routerLink]="['/edit-product/', product._id]">

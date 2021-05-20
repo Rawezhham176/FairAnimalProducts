@@ -13,10 +13,14 @@ let Product = new Schema({
   },
   product_description: {
           type: String
+  },
+  product_image: {
+    type: String
   }
 },{
   collection: 'products'
 })
+
 
 module.exports = mongoose.model('Product', Product)
 

@@ -23,7 +23,8 @@ export class AddProductPage implements OnInit {
       product_name: [''],
       product_producer: [''],
       product_price: [''],
-      product_description: ['']
+      product_description: [''],
+      product_image: ['']
     })
   }
 

@@ -39,7 +39,7 @@ export class ProductService {
       );
   }
 
-  updateSong(id, product: Product): Observable<any> {
+  updateProduct(id, product: Product): Observable<any> {
     return this.http.put('http://localhost:3000/api/update-product/' + id, product, this.httpOptions)
       .pipe(
         tap(_ => console.log(`Product updated: ${id}`)),
